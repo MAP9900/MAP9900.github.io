@@ -1,65 +1,175 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>MAP9900 - Data Science & History</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MAP9900 • Data Science & History</title>
+    <meta name="description" content="Projects and writing at the intersection of data science and history." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="style.css" as="style" />
   </head>
   <body>
-    <header>
-      <h1>WORK IN PROGRESS - IGNORE FOR NOW</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#writing">Writing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- ===== Floating / glassy header ===== -->
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MAP9900 Home">MAP9900</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <span class="spacer"></span>
+        <!-- External links -->
+        <a class="ext" href="https://github.com/map9900" target="_blank" rel="noopener">GitHub</a>
+        <a class="ext" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
       </nav>
     </header>
 
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Welcome to my personal website! I focus on data science, history, and how
-          technology can help us understand the past. This is a space to share
-          projects, research, and writing.
+    <!-- ===== Hero ===== -->
+    <section id="top" class="hero snap">
+      <div class="hero-content">
+        <h1 class="hero-title">Data Science × History</h1>
+        <p class="hero-sub">
+          I build models, interfaces, and historical simulations to make the past
+          feel measurable — and the data, legible.
         </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">Explore Projects</a>
+          <a class="btn" href="#about">About Me</a>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== Project Showcase (full-viewport panels) ===== -->
+    <main id="projects" class="panels" aria-label="Project Showcase">
+      <!-- Panel 1: Convoy Predictor -->
+      <section class="panel snap" data-animate>
+        <div class="panel-media" role="img" aria-label="WWII convoy visualization"></div>
+        <div class="panel-body">
+          <h2>Convoy Predictor</h2>
+          <p>
+            A WWII convoy simulator exploring risk and strategy. Continuous-time
+            torpedo collision, convoy layouts, and parameter sweeps — optimized for speed.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">Numerics</span>
+            <span class="tag">Simulation</span>
+          </div>
+          <a class="btn primary" href="https://map9900.github.io/Convoy-Predictor-Project/">Open Project</a>
+        </div>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <a href="https://map9900.github.io/Convoy-Predictor-Project/">
-              Convoy Predictor
-            </a> – A WWII convoy simulation exploring risk and strategy.
-          </li>
-          <li>
-            <a href="#">Data Science Toolkit</a> – (placeholder for future project)
-          </li>
-        </ul>
+      <!-- Panel 2: Historical Text Mining (placeholder) -->
+      <section class="panel alt snap" data-animate>
+        <div class="panel-media media-alt" role="img" aria-label="Digitized documents and n-gram charts"></div>
+        <div class="panel-body">
+          <h2>Mission Reports Miner</h2>
+          <p>
+            NLP pipeline to ingest, OCR, and structure WWII B-17 mission reports —
+            extracting targets, outcomes, aircraft status, and network relations over time.
+          </p>
+          <div class="tag-row">
+            <span class="tag">NLP</span>
+            <span class="tag">OCR</span>
+            <span class="tag">Visualization</span>
+          </div>
+          <a class="btn" href="#" aria-disabled="true">Coming Soon</a>
+        </div>
       </section>
 
-      <section id="writing">
-        <h2>Writing</h2>
-        <p>
-          I occasionally post essays and notes on historical topics, data-driven
-          analysis, and digital history projects. (Link coming soon!)
-        </p>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          You can reach me on <a href="https://github.com/map9900">GitHub</a>.
-        </p>
+      <!-- Panel 3: Data Notebook Kit (placeholder) -->
+      <section class="panel snap" data-animate>
+        <div class="panel-media media-3" role="img" aria-label="Notebook cells and charts"></div>
+        <div class="panel-body">
+          <h2>Data Notebook Kit</h2>
+          <p>
+            A minimal project scaffold for quick, reproducible analysis — sensible
+            defaults for environments, tests, and publishing to the web.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Reproducibility</span>
+            <span class="tag">Tooling</span>
+          </div>
+          <a class="btn" href="#" aria-disabled="true">Docs Soon</a>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2025 MAP9900. All rights reserved.</p>
+    <!-- ===== Writing teaser ===== -->
+    <section id="writing" class="writing snap" data-animate>
+      <div class="wrap">
+        <h2>Writing</h2>
+        <p class="lede">
+          Notes and essays on steam power, logistics, and how quant methods can
+          illuminate historical decision-making.
+        </p>
+        <ul class="cards">
+          <li class="card">
+            <h3>Steam, Steel, and Schedules</h3>
+            <p>How boiler tech and hull design reshaped timelines for imperial power projection.</p>
+            <a class="link" href="#" aria-disabled="true">Read (soon)</a>
+          </li>
+          <li class="card">
+            <h3>Designing Fast Simulations</h3>
+            <p>Balancing fidelity and speed: continuous collision vs. discrete ticks.</p>
+            <a class="link" href="#" aria-disabled="true">Read (soon)</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="about snap" data-animate>
+      <div class="wrap two-col">
+        <div>
+          <h2>About</h2>
+          <p>
+            I’m <strong>YOUR NAME</strong> (MAP9900). I work at the intersection of
+            data science and history — shipping small, fast models and polished
+            interfaces. I like clean abstractions, hard constraints, and surprising visuals.
+          </p>
+          <p>
+            Tools I reach for: Python, NumPy, Pandas, PyTest, uv/Conda, and modern web basics.
+          </p>
+        </div>
+        <div class="about-box">
+          <dl>
+            <div><dt>Location</dt><dd>U.S. (ET)</dd></div>
+            <div><dt>Focus</dt><dd>Simulation • NLP • Viz</dd></div>
+            <div><dt>Contact</dt><dd><a href="mailto:you@example.com">you@example.com</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact / Footer ===== -->
+    <footer id="contact" class="footer">
+      <div class="wrap">
+        <h2>Get in touch</h2>
+        <p>
+          Best via <a href="mailto:you@example.com">email</a>, or find me on
+          <a href="https://github.com/map9900" target="_blank" rel="noopener">GitHub</a>
+          and
+          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>.
+        </p>
+        <p class="tiny">&copy; <span id="year"></span> MAP9900. Built with semantic HTML & vanilla CSS/JS.</p>
+      </div>
     </footer>
+
+    <!-- ===== Minimal JS: scroll snap tweaks + reveal animations ===== -->
+    <script>
+      // Current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Reveal on scroll
+      const io = new IntersectionObserver((entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) e.target.classList.add('in');
+        }
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.25 });
+
+      document.querySelectorAll('[data-animate]').forEach(el => io.observe(el));
+    </script>
   </body>
 </html>
