@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MAP9900 • Data Science & History</title>
+    <title>Matthew Plambeck • Data Science & History</title>
     <meta name="description" content="Projects and writing at the intersection of data science and history." />
     <link rel="stylesheet" href="style.css" />
     <link rel="preload" href="style.css" as="style" />
@@ -11,7 +11,7 @@
   <body>
     <!-- ===== Floating / glassy header ===== -->
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="MAP9900 Home">MAP9900</a>
+      <a class="brand" href="#top" aria-label="Matthew Plambeck Home">Matthew Plambeck</a>
       <nav class="nav">
         <a href="#projects">Projects</a>
         <a href="#writing">Writing</a>
@@ -20,17 +20,18 @@
         <span class="spacer"></span>
         <!-- External links -->
         <a class="ext" href="https://github.com/map9900" target="_blank" rel="noopener">GitHub</a>
-        <a class="ext" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="ext" href="www.linkedin.com/in/matthew-plambeck" target="_blank" rel="noopener">LinkedIn</a>
       </nav>
     </header>
 
     <!-- ===== Hero ===== -->
     <section id="top" class="hero snap">
       <div class="hero-content">
-        <h1 class="hero-title">Data Science × History</h1>
+        <h1 class="hero-title">Data Science & History</h1>
         <p class="hero-sub">
-          I build models, interfaces, and historical simulations to make the past
-          feel measurable — and the data, legible.
+          Building models, simulations, and visualizations to examine history with a data science lens. Focused
+          on presenting data in meaningful and digestible ways.
+          
         </p>
         <div class="cta-row">
           <a class="btn primary" href="#projects">Explore Projects</a>
@@ -42,56 +43,63 @@
 
     <!-- ===== Project Showcase (full-viewport panels) ===== -->
     <main id="projects" class="panels" aria-label="Project Showcase">
-      <!-- Panel 1: Convoy Predictor -->
+
+      <!-- Panel 1: -->
       <section class="panel snap" data-animate>
         <div class="panel-media" role="img" aria-label="WWII convoy visualization"></div>
         <div class="panel-body">
-          <h2>Convoy Predictor</h2>
+          <h2>Modeling The Convoy System</h2>
           <p>
-            A WWII convoy simulator exploring risk and strategy. Continuous-time
-            torpedo collision, convoy layouts, and parameter sweeps — optimized for speed.
+            A project using real WWII data on North Atlantic Convoys and German U-boats aimed at classifying 
+            specific convoys at risk of having ships sunk. Collected 70,000 plus instances of ships verifying
+            through two sources ships that were sunk by U-boats. 
+
           </p>
           <div class="tag-row">
-            <span class="tag">Python</span>
-            <span class="tag">Numerics</span>
-            <span class="tag">Simulation</span>
+            <span class="tag">Classification</span>
+            <span class="tag">Neural Networks</span>
+            <span class="tag">Time Series Analysis</span>
+            <span class="tag">Web-Scraping</span>
           </div>
           <a class="btn primary" href="https://map9900.github.io/Convoy-Predictor-Project/">Open Project</a>
         </div>
       </section>
 
-      <!-- Panel 2: Historical Text Mining (placeholder) -->
+      <!-- Panel 2:  -->
       <section class="panel alt snap" data-animate>
         <div class="panel-media media-alt" role="img" aria-label="Digitized documents and n-gram charts"></div>
         <div class="panel-body">
-          <h2>Mission Reports Miner</h2>
+          <h2>Optimal Convoy Layouts and U-Boat Attack Strategies</h2>
           <p>
-            NLP pipeline to ingest, OCR, and structure WWII B-17 mission reports —
-            extracting targets, outcomes, aircraft status, and network relations over time.
+            Python simulations using machine learning to identify optimal layouts for convoys in defending
+            against torpedo based attacks. Built simulations in reproducible manner to allow for examination
+            into optimal U-Boat attack strategies as well. 
           </p>
           <div class="tag-row">
-            <span class="tag">NLP</span>
-            <span class="tag">OCR</span>
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">Simulations</span>
             <span class="tag">Visualization</span>
           </div>
-          <a class="btn" href="#" aria-disabled="true">Coming Soon</a>
+          <a class="btn" href="#" aria-disabled="true">Coming Soon (September-October 2025)</a>
         </div>
       </section>
 
-      <!-- Panel 3: Data Notebook Kit (placeholder) -->
+      <!-- Panel 3: -->
       <section class="panel snap" data-animate>
         <div class="panel-media media-3" role="img" aria-label="Notebook cells and charts"></div>
         <div class="panel-body">
-          <h2>Data Notebook Kit</h2>
+          <h2>NLP Look into After Action Reports</h2>
           <p>
-            A minimal project scaffold for quick, reproducible analysis — sensible
-            defaults for environments, tests, and publishing to the web.
+            Using NLP to examine aspects of after action reports. Still deciding data to examine, though leaning 
+            towards web-scraping B-17 8th Airforce after action reports. May also incorporate local AI models
+            for the text analysis. Still very much a work in progress. 
           </p>
           <div class="tag-row">
-            <span class="tag">Reproducibility</span>
-            <span class="tag">Tooling</span>
+            <span class="tag">NLP</span>
+            <span class="tag">AI</span>
+            <span class="tag">WWII History</span>
           </div>
-          <a class="btn" href="#" aria-disabled="true">Docs Soon</a>
+          <a class="btn" href="#" aria-disabled="true">Coming Soon (October-November 2025)</a>
         </div>
       </section>
     </main>
@@ -101,18 +109,17 @@
       <div class="wrap">
         <h2>Writing</h2>
         <p class="lede">
-          Notes and essays on steam power, logistics, and how quant methods can
-          illuminate historical decision-making.
+          Articles and other writing based off my projects and interests
         </p>
         <ul class="cards">
           <li class="card">
-            <h3>Steam, Steel, and Schedules</h3>
-            <p>How boiler tech and hull design reshaped timelines for imperial power projection.</p>
-            <a class="link" href="#" aria-disabled="true">Read (soon)</a>
+            <h3>The Convoy System of WWII</h3>
+            <p>Examining some of the features that made the convoy system effective by using WWII era equations.</p>
+            <a class="link" href="https://medium.com/@matthewplambeck99/the-convoy-system-of-wwii-a-look-into-its-effectiveness-through-data-science-6674b02227b5">Read</a>
           </li>
           <li class="card">
-            <h3>Designing Fast Simulations</h3>
-            <p>Balancing fidelity and speed: continuous collision vs. discrete ticks.</p>
+            <h3>Future Article</h3>
+            <p>Subject TBD, will likely write a piece based off simulating convoy layouts</p>
             <a class="link" href="#" aria-disabled="true">Read (soon)</a>
           </li>
         </ul>
@@ -125,19 +132,21 @@
         <div>
           <h2>About</h2>
           <p>
-            I’m <strong>YOUR NAME</strong> (MAP9900). I work at the intersection of
-            data science and history — shipping small, fast models and polished
-            interfaces. I like clean abstractions, hard constraints, and surprising visuals.
+            I’m <strong>Matthew Plambeck, </strong> a senior at the College of William & Mary majoring 
+            in data science and minoring in history. 
+            
+            
+          
           </p>
           <p>
-            Tools I reach for: Python, NumPy, Pandas, PyTest, uv/Conda, and modern web basics.
+            Tools I Use: Python, NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch, and other Python Libraries 
           </p>
         </div>
         <div class="about-box">
           <dl>
-            <div><dt>Location</dt><dd>U.S. (ET)</dd></div>
-            <div><dt>Focus</dt><dd>Simulation • NLP • Viz</dd></div>
-            <div><dt>Contact</dt><dd><a href="mailto:you@example.com">you@example.com</a></dd></div>
+            <div><dt>Location</dt><dd>Seattle, WA & Williamsburg, VA</dd></div>
+            <div><dt>Focus</dt><dd>Machine Learning • Data Analysis • Visualization</dd></div>
+            <div><dt>Contact</dt><dd><a href="mailto:matthewplambeck99@gmail.com">matthewplambeck99@gmail.com</a></dd></div>
           </dl>
         </div>
       </div>
@@ -148,16 +157,16 @@
       <div class="wrap">
         <h2>Get in touch</h2>
         <p>
-          Best via <a href="mailto:you@example.com">email</a>, or find me on
+          Best via <a href="mailto:matthewplambeck99@gmail.com">email</a>, or find me on
           <a href="https://github.com/map9900" target="_blank" rel="noopener">GitHub</a>
           and
           <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>.
         </p>
-        <p class="tiny">&copy; <span id="year"></span> MAP9900. Built with semantic HTML & vanilla CSS/JS.</p>
+        <p class="tiny">&copy; <span id="year"></span> Matthew Plambeck. Built with HTML & CSS/JS.</p>
       </div>
     </footer>
 
-    <!-- ===== Minimal JS: scroll snap tweaks + reveal animations ===== -->
+    <!-- ===== Limited JS: scroll snap tweaks + reveal animations ===== -->
     <script>
       // Current year
       document.getElementById('year').textContent = new Date().getFullYear();
