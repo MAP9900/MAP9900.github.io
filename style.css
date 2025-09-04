@@ -11,8 +11,8 @@ img { max-width: 100%; display: block; }
   --txt: #e9eaec;
   --muted: #b8bec7;
   --line: #2a2a33;
-  --brand: #6aa9ff;       /* Accent */
-  --brand-2: #a5ffcb;     /* Secondary accent */
+  --brand: #3b85ec;       /* Accent */
+  --brand-2: #43e888;     /* Secondary accent */
   --glass: rgba(255,255,255,0.05);
   --blur: 12px;
   --radius: 18px;
@@ -27,7 +27,7 @@ img { max-width: 100%; display: block; }
 
 @media (prefers-color-scheme: light){
   :root{
-    --bg: #f8f9fb; --bg-2: #ffffff; --txt: #121317; --muted: #4b5563; --line:#eaecef;
+    --bg: #f8f9fb; --bg-2: #ffff; --txt: #121317; --muted: #4b5563; --line:#eaecef;
     --glass: rgba(255,255,255,0.65); --blur: 10px;
   }
 }
@@ -125,7 +125,7 @@ body::before{
   .panels .panel{ grid-template-columns: 1fr; }
 }
 
-/* Media surfaces (fake "product shots") */
+/* Media surfaces */
 .panel-media{
   height: clamp(320px, 50vh, 520px);
   border-radius: var(--radius);
