@@ -144,16 +144,15 @@
           <br><br>
             Outside of this, I enjoy golfing, traveling, and reading mystery novels.
           </p>
-         <p>
-          <br><strong>Tools I Use:</strong> Python (NumPy, Pandas, Matplotlib, SciPy, Scikit-Learn, PyTorch,
-           and other libraries), R, and SQL
-        </p>
+         
         </div>
         <div class="about-box">
           <dl>
             <div><dt>Location</dt><dd>Seattle, WA & Williamsburg, VA</dd></div>
             <div><dt>Focus</dt><dd>Machine Learning • Data Analytics • Visualization</dd></div>
+            <div><dt>Tools I Use</dt><dd>Python (NumPy, Pandas, Matplotlib, SciPy, Scikit-Learn, PyTorch, and other libraries), R, SQL, and Github</dd></div>
             <div><dt>Contact</dt><dd><a href="mailto:matthewplambeck99@gmail.com">matthewplambeck99@gmail.com</a></dd></div>
+            <div><dt>Resume</dt><dd><a href="assets/resume/Matthew Plambeck Resume.pdf" target="_blank" rel="noopener">View Resume (PDF)</a></dd></div>
           </dl>
         </div>
       </div>
@@ -186,6 +185,21 @@
       }, { rootMargin: '0px 0px -10% 0px', threshold: 0.25 });
 
       document.querySelectorAll('[data-animate]').forEach(el => io.observe(el));
+
+      // Open external links in a new tab (keeps site open)
+      document.querySelectorAll('a[href]').forEach(a => {
+        try {
+          const url = new URL(a.getAttribute('href'), window.location.href);
+          const isHttp = url.protocol === 'http:' || url.protocol === 'https:';
+          const isExternal = isHttp && url.hostname !== window.location.hostname;
+          if (isExternal) {
+            a.setAttribute('target', '_blank');
+            a.setAttribute('rel', 'noopener');
+          }
+        } catch (e) {
+          // Ignore malformed or non-URL hrefs (e.g., mailto:, tel:, javascript:)
+        }
+      });
     </script>
   </body>
 </html>
