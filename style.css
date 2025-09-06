@@ -131,7 +131,7 @@ body::before{
   border-radius: var(--radius);
   background:
     linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)),
-    url('assets/convoy.jpg') center/cover no-repeat,
+    url('assets/images/Arctic_Convoy_May_1942.jpg') center/cover no-repeat,
     radial-gradient(60% 60% at 70% 20%, rgba(106,169,255,0.3), transparent 50%);
   outline: 1px solid var(--line);
   box-shadow: 0 10px 40px rgba(0,0,0,0.25);
